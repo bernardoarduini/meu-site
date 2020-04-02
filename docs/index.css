@@ -1,18 +1,19 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
 p{
-    padding-top: 40px;
     display: inline;
+    padding-left: 100px;
 }
 
 header{
     font-size: 3em;
     background-color: orange;
-    padding-left: 60px;
     color: black;
-    height: 150px;
+    height: 100px;
+   padding-top: 30px;
     }
 
     #input{
@@ -24,14 +25,15 @@ header{
 
 #busca{
     text-align: right;
-    padding-bottom: 20px;
-    padding-right:40px;
-    margin-bottom: 20px;
-                  
+    display: inline;
+    padding-left: 22%;
+                    
 }
+
 #botao{
     width: 100px;
     height: 40px;
+    font-size: 22px;
 }
 
 .videos2{
@@ -131,3 +133,55 @@ header{
     max-width: 100%;
     height: auto;
 }
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    }
+    
+    .link{
+    background-color: #494950;
+    padding: 20px;
+    font-family: 'Arial';
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: #f4f4f9;
+    border-bottom: 2px solid #222;
+    }
+    
+    .link:hover{
+    background-color: #050542;
+    }
+    
+    #check:checked ~ .barra{
+    transform: translateX(300px);
+    }
+    
+    
+    nav a{
+    text-decoration: none;
+    }
+    
+    
+    #check{
+    display: none;
+    }
+    
+    #icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    padding-top: 0;
+    }
+    
+    .barra{
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left:-300px;
+    
+    }
